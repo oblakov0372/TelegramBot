@@ -59,7 +59,7 @@ namespace TelegramBot
 
         private async Task HandleMessageAsync(ITelegramBotClient botClient, Message message, CancellationToken cancellationToken)
         {
-            if (message.Text == "/start" && message.Text == "/home")
+            if (message.Text == "/start" || message.Text == "/home")
             {
                 ReplyKeyboardMarkup keyboardMarkup = new ReplyKeyboardMarkup(new[]
                 {
